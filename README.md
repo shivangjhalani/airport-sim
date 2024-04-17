@@ -1,17 +1,6 @@
 # Notes for the project
 We have 1 month(?) to complete :)
 
-## Learn git
-
-_Git is a version control system used to keep track of changes in code, and it is also very useful in this case to collaborate on a project. Its like a google drive for code, the code is always up-to-date with changes others make._
-
-- Learn git and github
-
-  - [Video tutorial](https://youtu.be/2sjqTHE0zok?si=bANJHZ7cXQy0vkqT)
-
-- Getting started
-  - [Option 1](https://40dev.com/2023/01/getting-started-with-git-and-github/)
-  - [Option 2](https://rogerdudler.github.io/git-guide/)
 
 ## Guidelines
 
@@ -29,3 +18,15 @@ _Git is a version control system used to keep track of changes in code, and it i
 ```bash
 git clone https://github.com/shivangjhalani/airport-sim.git
 ```
+
+## Learn git
+
+_Git is a version control system used to keep track of changes in code, and it is also very useful in this case to collaborate on a project. Its like a google drive for code, the code is always up-to-date with changes others make._
+
+- Learn git and github
+
+  - [Video tutorial](https://youtu.be/2sjqTHE0zok?si=bANJHZ7cXQy0vkqT)
+
+- Getting started
+  - [Option 1](https://40dev.com/2023/01/getting-started-with-git-and-github/)
+  - [Option 2](https://rogerdudler.github.io/git-guide/)
