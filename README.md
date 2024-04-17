@@ -2,6 +2,12 @@
 
 We have 1 month(?) to complete :)
 
+## Navigation
+
+- [Guidelines](https://github.com/shivangjhalani/airport-sim?tab=readme-ov-file#guidelines)
+- [Getting Started](https://github.com/shivangjhalani/airport-sim?tab=readme-ov-file#getting-started)
+- [Learning Git](https://github.com/shivangjhalani/airport-sim?tab=readme-ov-file#learn-git)
+
 ## Guidelines
 
 1. Keep the code modular, the project is structured such that it forces you to keep it modular. Since the tasks are divided b/w groups, modularity is necessary to put the whole program together.
@@ -34,11 +40,10 @@ git pull
 7. Continue the work... It's a good practice to commit and push your changes from time to time, if not, just commit and push your code by using `git add .` and `git commit -m "<commit_message>"` and `git push`. You might need to go to the Learn git section below in order to understand what you are doing here.
 8. All the code that you write on your computer will live there only locally. After your team has completed the work, you must create a `PULL request` in order to upload your code to the main repository.
 9. In order to create a pull request after commiting and pushing your code to your own cloned repository, first `sync` the fork like we did above then...
-![Screenshot from 2024-04-17 15-52-51](https://github.com/shivangjhalani/airport-sim/assets/137867387/41dad86f-0eaf-4f41-8475-8cc37ee8c547)
-![Screenshot from 2024-04-17 15-53-48](https://github.com/shivangjhalani/airport-sim/assets/137867387/246ec984-46cc-42dc-895b-be8382cac4f0)
-![Screenshot from 2024-04-17 15-55-11](https://github.com/shivangjhalani/airport-sim/assets/137867387/21862238-910d-4629-99ba-281895407fc9)
+   ![Screenshot from 2024-04-17 15-52-51](https://github.com/shivangjhalani/airport-sim/assets/137867387/41dad86f-0eaf-4f41-8475-8cc37ee8c547)
+   ![Screenshot from 2024-04-17 15-53-48](https://github.com/shivangjhalani/airport-sim/assets/137867387/246ec984-46cc-42dc-895b-be8382cac4f0)
+   ![Screenshot from 2024-04-17 15-55-11](https://github.com/shivangjhalani/airport-sim/assets/137867387/21862238-910d-4629-99ba-281895407fc9)
 10. Inform on whatsapp if you have created your pull request.
-
 
 ## Learn git
 
