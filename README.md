@@ -17,8 +17,7 @@ We have 1 month(?) to complete :)
 │   ├── arrival.h         # Declarations related to arrival functionality
 │   ├── departure.h       # Declarations related to departure functionality
 │   ├── airport.h         # Declarations related to general airport operations
-│   ├── customer.h        # Declarations related to customer operations
-│   └── admin.h           # Declarations related to admin operations
+│   └── ...
 │
 ├── src/                  # Source files
 │   ├── arrival/          # Implementation of arrival functionality
