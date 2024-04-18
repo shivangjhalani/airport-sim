@@ -8,6 +8,33 @@ We have 1 month(?) to complete :)
 - [Getting Started](https://github.com/shivangjhalani/airport-sim?tab=readme-ov-file#getting-started)
 - [Learning Git](https://github.com/shivangjhalani/airport-sim?tab=readme-ov-file#learn-git)
 
+### Project structure
+```
+@github.com/shivangjhalani/airport-sim/
+│
+├── include/              # Header files
+│   ├── arrival.h         # Declarations related to arrival functionality
+│   ├── departure.h       # Declarations related to departure functionality
+│   ├── airport.h         # Declarations related to general airport operations
+│   ├── customer.h        # Declarations related to customer operations
+│   └── admin.h           # Declarations related to admin operations
+│
+├── src/                  # Source files
+│   ├── arrival           # Implementation of arrival functionality
+│   ├── departure         # Implementation of departure functionality
+│   ├── common            # Implementation of general airport operations
+│   └── admin.c           # Implementation of admin operations
+│
+├── data/                 # Data files (e.g., flight schedules)
+│   ├── flights.txt       # Flight information data file
+│   ├── passengers.txt    # Passenger information data file
+│   └── ...
+│
+├── main.c
+│
+└── Makefile
+```
+
 ### Guidelines
 
 1. Keep the code modular, the project is structured such that it forces you to keep it modular. Since the tasks are divided b/w groups, modularity is necessary to put the whole program together.
