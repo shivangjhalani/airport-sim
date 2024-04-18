@@ -4,6 +4,7 @@ We have 1 month(?) to complete :)
 
 ### Navigation
 
+- [Project structure](https://github.com/shivangjhalani/airport-sim?tab=readme-ov-file#project-structure)
 - [Guidelines](https://github.com/shivangjhalani/airport-sim?tab=readme-ov-file#guidelines)
 - [Getting Started](https://github.com/shivangjhalani/airport-sim?tab=readme-ov-file#getting-started)
 - [Learning Git](https://github.com/shivangjhalani/airport-sim?tab=readme-ov-file#learn-git)
