@@ -20,10 +20,9 @@ We have 1 month(?) to complete :)
 │   └── admin.h           # Declarations related to admin operations
 │
 ├── src/                  # Source files
-│   ├── arrival           # Implementation of arrival functionality
-│   ├── departure         # Implementation of departure functionality
-│   ├── common            # Implementation of general airport operations
-│   └── admin.c           # Implementation of admin operations
+│   ├── arrival/          # Implementation of arrival functionality
+│   ├── departure/        # Implementation of departure functionality
+│   └── common/           # Implementation of general airport operations
 │
 ├── data/                 # Data files (e.g., flight schedules)
 │   ├── flights.txt       # Flight information data file
