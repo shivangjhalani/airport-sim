@@ -14,7 +14,7 @@
    > Just a small independent function to improve simulation, no real use
    > How would he enter luggage content info? Should we make it random with less chances?
 4. stack `luggage_checkin` (void)
-   > Ask customer for no. of luggages and each luggage's wright, check conditions.
+   > Ask customer for no. of luggages and each luggage's weight, check conditions.
 5. boarding-pass `customer_checkin` (customer-info-from-ticket-booking)
    > Boarding pass has info like - Passenger details, assigned seat, luggage info ...
 6. 
