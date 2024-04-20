@@ -10,16 +10,16 @@
 - struct `airplane`
   > Stores details of airplanes with the order signifying priority based on order of arrival
   > Stores details of airplanes with the order signifying priority based on order of departure(including all maintainance check details)
-- void `priorityChange`(Airplane-order, tag of airplane having emergency)
+- void `priorityChange` (airplane-order, tag of airplane having emergency)
   > Changes priority order of airplanes when called baded on emergency
-- bool `flightClearanceForAirspace`(airspace-traffic-details)
-  > Permits or denies entry to airport airspace(Both arriving and departing planes)
-- char `flightDockingClearance`(dock-details, plane-details)
+- bool `flightClearanceForAirspace` (airspace-traffic-details)
+  > Permits or denies entry to airport airspace (Both arriving and departing planes)
+- char `flightDockingClearance` (dock-details, plane-details)
   > Assigns entry into docks based on availability and size of plane
-- bool `flightClearanceForRunways`(runway-traffic-details,boolean output of Airspace func, string value of Docking func)
+- bool `flightClearanceForRunways` (runway-traffic-details,boolean output of Airspace func, string value of Docking func)
   > (Arriving planes) Permits entry to land and assigns runways based on availability of runways and docks and proximity to assigned dock
   > (Departing planes) Permits entry to land and assigns runways based on availability of runways and airspace as well as proximity to current dock
-- char `gateAssignment`(dock of plane location, gate locations and availability)
+- char `gateAssignment` (dock of plane location, gate locations and availability)
   > Finds and assigns closest available gate
   > calls bus if necessary 
 
