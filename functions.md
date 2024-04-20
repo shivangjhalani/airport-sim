@@ -23,7 +23,7 @@
    > Loads the luggage into airplane
 - bool `securityCheckin` (void)
    > Ask customer for their hand baggage details, like is there sharp objects? etc., also check their boarding pass.
-- queue `boardingQueue` ()
+- queue `boardingQueue` (?)
    > Forms a queue outside the gate, first come first board. After security checkin, come order decided how?
 - reordered-queue `priorityAssignment` (queue)
    > Certain people come front based on age, disabilities etc.
