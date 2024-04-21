@@ -66,7 +66,7 @@
    > The queue is split into 2 halves based on seat number for boarding and then boarding happens
 - ? `boardingProcedure` (rereordered-queue)
   > Boarding happened, flight took off?, reduce count of people in airport.
-
+  
 
 
 
@@ -80,4 +80,5 @@
   > Gives amount to be paid in tarriffs
 - bool `immigration`(void)
   > checks immigration details and give approval/disapproval
-
+- int `Taxi`(void)
+  > returns Taxi plate number 
