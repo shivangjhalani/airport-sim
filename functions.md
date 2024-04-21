@@ -11,7 +11,7 @@
   > Stores details of airplanes with the order signifying priority based on order of arrival
   > Stores details of airplanes with the order signifying priority based on order of departure(including all maintainance check details)
 - void `priorityChange` (airplane-order, tag of airplane having emergency)
-  > Changes priority order of airplanes when called baded on emergency
+  > Changes priority order of airplanes when called based on emergency
 - bool `flightClearanceForAirspace` (airspace-traffic-details)
   > Permits or denies entry to airport airspace (Both arriving and departing planes)
 - char `flightDockingClearance` (dock-details, plane-details)
@@ -21,10 +21,14 @@
   > (Departing planes) Permits entry to land and assigns runways based on availability of runways and airspace as well as proximity to current dock
 - char `gateAssignment` (dock of plane location, gate locations and availability)
   > Finds and assigns closest available gate
-  > calls bus if necessary 
+  > calls bus if necessary
+- void `FlightDetailsDisplay`(plane-details)
+  > Displays the real time status(on-tie, delayed, cancelled) and information(destination, time, gate) of each flight
+
 
 ### User
-- ticket-file `ticketBooking` (void)
+- ticket-file `ticketBooking` (bool from domestic/internaltional)
+   > Asks the user if their flight is domestic or international and uses it to add things like visa requirement to ticket booking,etc
    > Customer will input a lot of relevant info.
    > Different flight classes (first, business, prem-economy, economy ...)
 - void `customerEnter` (user-entry-time?)
@@ -42,6 +46,8 @@
    > Ask customer for their hand baggage details, like is there sharp objects? etc., also check their boarding pass.
 - queue `boardingQueue` (?)
    > Forms a queue outside the gate, first come first board. After security checkin, come order decided how?
+- `customs`
+  > Gives amount to be paid in tarriffs 
 - reordered-queue `priorityAssignment` (queue)
    > Certain people come front based on age, disabilities etc.
 - rereordered-queue `reorderQueue` (reordered-queue)
