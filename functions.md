@@ -43,7 +43,7 @@
    > Asks the user if their flight is domestic or international and uses it to add things like visa requirement to ticket booking,etc
    > Customer will input a lot of relevant info.
    > Different flight classes (first, business, prem-economy, economy ...)
-- void `customerEnter` (user-entry-time?)
+- void `customerEnter` (void)
 - char `parkingspot`(if coustomer used own car)
   > Returns parking spot
 - bool `luggageScan` (customer-luggage-info)
@@ -80,5 +80,6 @@
   > Gives amount to be paid in tarriffs
 - bool `immigration`(void)
   > checks immigration details and give approval/disapproval
+- void `customerExit`(void)
 - int `Taxi`(void)
-  > returns Taxi plate number 
+  > returns Taxi plate number if needed
