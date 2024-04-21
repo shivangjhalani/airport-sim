@@ -22,6 +22,8 @@
   > Ask customer for no. of luggages and each luggage's weight, check conditions.
 - answer-to-questions `securityCheckinEnquiry` (void)
   > Ask stuff like name, where going, is there anything in your pockets? (frisking emulation)
+- bool `getAskedEmergencySeat` (void)
+  > Say yes or no if willing to perform emergency actions if you are on emergency seat
 
 ### Staff
 - bool `luggageSecurityScan` (customer-luggage-info)
@@ -42,6 +44,10 @@
   > The queue is split into 2 halves based on seat number for boarding and then boarding happens
 - ? `boardingProcedure` (split-queue)
   > Boarding happened, flight took off?, reduce count of people in airport.
+- void `emergencyBreifing` (void)
+  > Will be called in flow
+- change-seats `changeSeatsForEmergency` (void)
+  > Ask customer if they are wiling to perform emergency actions
 
 ## Arrival
 ### Customer
