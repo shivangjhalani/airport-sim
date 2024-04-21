@@ -45,12 +45,18 @@
 
 ## Arrival
 ### Customer
-- void `DeboardPlane`
+- queue `deboardPlane` ()
   > passenger deboard plane based on the seat number
-- int `LuggageArea`(void)
+- int `luggageArea` (void)
   > Returns baggage claim area number to a plane
-- void `LuggageLoadAndCollect`(luggage stack, )
-  > Put luggage on conveyour belt on last in first out basis and have passangers that have arrived collect them(delay random passangers in bathroom breaks)
+- queue-of-washroom-people `washroomTime` (void)
+  > Asks user if they wanna go washroom
+- circularly-linked-list `luggageLoad` (luggage stack)
+  > Put luggage on conveyour belt on last in first out basis and have passangers that have arrived collect them
+  > keep rotating the belt
+- `collectLuggage` (luggage-circularly-linked-list, deboarded-queue, washroom-break-people)
+  > Match circularly linked list and customer queue, if position of owner and bag same, pick it up.
+  > Washroom break people come late and randomly get in middle of circularly linked list of people.
 - int `customs`(void)
   > Gives amount to be paid in tarriffs
 - bool `immigration`(void)
