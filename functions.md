@@ -54,7 +54,7 @@
 - circularly-linked-list `luggageLoad` (luggage stack)
   > Put luggage on conveyour belt on last in first out basis and have passangers that have arrived collect them
   > keep rotating the belt
-- `collectLuggage` (luggage-circularly-linked-list, deboarded-queue, washroom-break-people)
+- struct-customer-and-luggage `collectLuggage` (luggage-circularly-linked-list, deboarded-queue, washroom-break-people)
   > Match circularly linked list and customer queue, if position of owner and bag same, pick it up.
   > Washroom break people come late and randomly get in middle of circularly linked list of people.
 - int `customs`(void)
@@ -81,6 +81,8 @@
 - char `gateAssignment` (dock of plane location, gate locations and availability)
   > Finds and assigns closest available gate
   > calls bus if necessary
+
+##### Staff seperate functions
 - void `flightDetailsDisplay` (plane-details)
   > Displays the real time status(on-tie, delayed, cancelled) and information(destination, time, gate) of each flight
 - int `addFlight` (void)
@@ -92,7 +94,11 @@
 - int `addRunway` (location)
   > Adds runway to list and returns runway number
 - void `deleteRunway` (runway number)
-  > Removes runway to the list
+  > Removes runway from the list
+- int `addGate` (void)
+  > Adds gate to list and returns gate number
+- void `deleteGate` (gate number)
+  > Removes gate from the list
 
 
 
