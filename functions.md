@@ -38,22 +38,26 @@
   > Forms a queue outside the gate, first come first board. After security checkin, come order decided how?\
 - reordered-queue `priorityAssignment` (queue)
   > Certain people come front based on age, disabilities etc.
-- rereordered-queue `reorderQueue` (reordered-queue)
+- split-queue `splitQueue` (reordered-queue)
   > The queue is split into 2 halves based on seat number for boarding and then boarding happens
-- ? `boardingProcedure` (rereordered-queue)
+- ? `boardingProcedure` (split-queue)
   > Boarding happened, flight took off?, reduce count of people in airport.
 
-
-
-
-
-
-
-
-
-
-
-
+## Arrival
+### Customer
+- void `DeboardPlane`
+  > passenger deboard plane based on the seat number
+- int `LuggageArea`(void)
+  > Returns baggage claim area number to a plane
+- void `LuggageLoadAndCollect`(luggage stack, )
+  > Put luggage on conveyour belt on last in first out basis and have passangers that have arrived collect them(delay random passangers in bathroom breaks)
+- int `customs`(void)
+  > Gives amount to be paid in tarriffs
+- bool `immigration`(void)
+  > checks immigration details and give approval/disapproval
+- void `customerExit`(void)
+- int `Taxi`(void)
+  > returns Taxi plate number if needed
 
 ### Staff
 - struct `airplane`
@@ -71,32 +75,19 @@
 - char `gateAssignment` (dock of plane location, gate locations and availability)
   > Finds and assigns closest available gate
   > calls bus if necessary
-- void `FlightDetailsDisplay`(plane-details)
+- void `flightDetailsDisplay` (plane-details)
   > Displays the real time status(on-tie, delayed, cancelled) and information(destination, time, gate) of each flight
-- int `AddFlight`(void)
+- int `addFlight` (void)
   > Adds a flight to the list and returns flight number
-- void `DeleteFlight`(flight number)
+- void `deleteFlight` (flight number)
   > Deletes Flight fom the list
-- void `ModifyFlight`(flight number)
+- void `modifyFlight` (flight number)
   > Can modify details of an existing flight
-- int `AddRunway`(location)
+- int `addRunway` (location)
   > Adds runway to list and returns runway number
-- void `DeleteRunway`(runway number)
+- void `deleteRunway` (runway number)
   > Removes runway to the list
 
 
 
 
-- void `DeboardPlane`
-  > passenger deboard plane based on the seat number
-- int `LuggageArea`(void)
-  > Returns baggage claim area number to a plane
-- void `LuggageLoadAndCollect`(luggage stack, )
-  > Put luggage on conveyour belt on last in first out basis and have passangers that have arrived collect them(delay random passangers in bathroom breaks)
-- int `customs`(void)
-  > Gives amount to be paid in tarriffs
-- bool `immigration`(void)
-  > checks immigration details and give approval/disapproval
-- void `customerExit`(void)
-- int `Taxi`(void)
-  > returns Taxi plate number if needed
