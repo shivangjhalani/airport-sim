@@ -53,8 +53,8 @@
   > Removes runway to the list
 - void `emergencyBreifing` (void)
   > Will be called in flow
-- change-seats `changeSeatsForEmergency` (void)
-  > Ask customer if they are wiling to perform emergency actions
+- change-seats `changeSeatsForEmergency` (customer-answer)
+  > Reassign seat if customer not willing.
 - `snacksFunction`?
 
 ## Arrival
