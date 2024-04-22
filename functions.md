@@ -41,13 +41,21 @@
 - reordered-queue `priorityAssignment` (queue)
   > Certain people come front based on age, disabilities etc.
 - split-queue `splitQueue` (reordered-queue)
-  > The queue is split into 2 halves based on seat number for boarding and then boarding happens
-- ? `boardingProcedure` (split-queue)
-  > Boarding happened, flight took off?, reduce count of people in airport.
+  > The queue is split into based on seat number for boarding
+- bool `isBusRequired` (plane-gate-no)
+  > If no gate assigned to plane, call bus.
+- bus-gate `callBus` (is-bus-required)
+  > Returns gate number of bus.
+- cut-queue `boardBus` (split-queue)
+  > Run this function many times till all passengers dropped off and keep decreasing the passneger queue size as bus takes specified amount away.- int `addRunway` (location)
+  > Adds runway to list and returns runway number
+- void `deleteRunway` (runway number)
+  > Removes runway to the list
 - void `emergencyBreifing` (void)
   > Will be called in flow
 - change-seats `changeSeatsForEmergency` (void)
   > Ask customer if they are wiling to perform emergency actions
+- `snacksFunction`?
 
 ## Arrival
 ### Customer
