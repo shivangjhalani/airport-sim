@@ -36,6 +36,7 @@
   > How would he enter luggage content info? Should we make it random with less chances?
 - luggage-queue `luggageCheckin` (luggage-info)
   > The luggage will be tagged with its customer details and flight details.
+  > Also add conditions for overweight over count etc.
 - boarding-pass `customerCheckin` (customer-info-from-ticket-booking)
   > Boarding pass has info like - Passenger details, assigned seat, assigned gate, luggage info ...
 - stack `loadingLuggage` (luggage-queue)
@@ -67,6 +68,8 @@
 
 ## Arrival
 ### Customer
+- queue `layOverPassengers` (from their ticket info)
+  > Checks for layover, if yes, keep them in the plane. Let rest leave.
 - queue `deboardPlane` ()
   > passenger deboard plane based on the seat number
 - int `luggageArea` (void)
@@ -79,8 +82,10 @@
 - struct-customer-and-luggage `collectLuggage` (luggage-circularly-linked-list, deboarded-queue, washroom-break-people)
   > Match circularly linked list and customer queue, if position of owner and bag same, pick it up.
   > Washroom break people come late and randomly get in middle of circularly linked list of people.
-- int `customs`(void)
+- int `customs` (void)
   > Gives amount to be paid in tarriffs
+- bool `checkExitLuggage` (void)
+  > Enter luggage content info for imported stuff.
 - bool `immigration`(void)
   > checks immigration details and give approval/disapproval
 - void `customerExit`(void)
@@ -121,6 +126,9 @@
   > Adds gate to list and returns gate number
 - void `deleteGate` (gate number)
   > Removes gate from the list
+- bool `groundCrewAvailability` (current-available-ground-crew)
+  > Admin tells how many crew available
+  > Also cange current available
 
 
 
