@@ -14,6 +14,7 @@
 - ticket-file `ticketBooking` (bool from domestic/internaltional)
   > Different input things like visa requirement to ticket booking,etc based on international or not.
   > Customer will input a lot of relevant info.
+  > Customer would alsp be able to choose their seat
   > Different flight classes (first, business, prem-economy, economy ...)
 - char `parkingspot`(if coustomer used own car)
   > Returns parking spot
