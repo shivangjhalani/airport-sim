@@ -8,8 +8,11 @@
 
 ## Departure
 ### Customer
+- bool `domesticOrInternational`(void)
+  > Asks the user if their flight is domestic or international
+  > Can be used in places like customs and immigration and security checkin.
 - ticket-file `ticketBooking` (bool from domestic/internaltional)
-  > Asks the user if their flight is domestic or international and uses it to add things like visa requirement to ticket booking,etc
+  > Different input things like visa requirement to ticket booking,etc based on international or not.
   > Customer will input a lot of relevant info.
   > Different flight classes (first, business, prem-economy, economy ...)
 - char `parkingspot`(if coustomer used own car)
@@ -20,7 +23,9 @@
   > Will be called by customer enter
 - customer-luggage-info `luggageCheckinInfo` (void)
   > Ask customer for no. of luggages and each luggage's weight, check conditions.
-- answer-to-questions `securityCheckinEnquiry` (void)
+- answer-to-questions `domesticSecurityCheckinEnquiry` (void)
+  > Ask stuff like name, where going, is there anything in your pockets? (frisking emulation)
+- answer-to-questions `internationalSecurityCheckinEnquiry` (void)
   > Ask stuff like name, where going, is there anything in your pockets? (frisking emulation)
 - bool `getAskedEmergencySeat` (void)
   > Say yes or no if willing to perform emergency actions if you are on emergency seat
@@ -34,8 +39,10 @@
   > Boarding pass has info like - Passenger details, assigned seat, assigned gate, luggage info ...
 - stack `loadingLuggage` (luggage-queue)
   > Loads the luggage into airplane
-- bool `securityCheckin` (ask-customer-questions)
+- bool `dometicSecurityCheckin` (ask-customer-questions)
   > Ask customer for their hand baggage details, like is there sharp objects? etc., also check their boarding pass.
+- bool `internationalSecurityCheckin` (ask-customer-questions)
+  > Ask more stuff (whether thay have any criminal record, visa, etc).
 - queue `boardingQueue` (?)
   > Forms a queue outside the gate, first come first board. After security checkin, come order decided how?\
 - reordered-queue `priorityAssignment` (queue)
