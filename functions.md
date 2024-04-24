@@ -16,10 +16,14 @@
   > Customer will input a lot of relevant info.
   > Customer would alsp be able to choose their seat
   > Different flight classes (first, business, prem-economy, economy ...)
-- char `parkingspot`(if coustomer used own car)
+- bool `webCheckin` (void)
+  > Called in flow
+- char `parkingspot` (if coustomer used own car)
   > Returns parking spot
 - void `customerEnter` (void)
   > Just a filler function to basically start simulation
+- bool `physicalAssistance` (void)
+  > Called in flow
 - customer-luggage-content-info `luggageSecurityScanInfo` (void)
   > Will be called by customer enter
 - customer-luggage-info `luggageCheckinInfo` (void)
@@ -128,7 +132,6 @@
   > Removes gate from the list
 - bool `groundCrewAvailability` (current-available-ground-crew)
   > Admin tells how many crew available
-  > Also cange current available
 
 
 
