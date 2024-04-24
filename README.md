@@ -17,12 +17,16 @@ We have 1 month(?) to complete :)
 │   ├── arrival.h         # Declarations related to arrival functionality
 │   ├── departure.h       # Declarations related to departure functionality
 │   ├── airport.h         # Declarations related to general airport operations
-│   └── ...
+│   └── ...               # These files are just example names for now...
 │
 ├── src/                  # Source files
 │   ├── arrival/          # Implementation of arrival functionality
+│   │   ├── user/
+│   │   └── staff/
 │   ├── departure/        # Implementation of departure functionality
-│   └── common/           # Implementation of general airport operations
+│   │   ├── user/
+│   │   └── staff/
+│   └── backend/           # Implementation of backend airport operations
 │
 ├── data/                 # Data files (e.g., flight schedules)
 │   ├── flights.txt       # Flight information data file
