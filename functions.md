@@ -86,7 +86,7 @@
 - struct-customer-and-luggage `collectLuggage` (luggage-circularly-linked-list, deboarded-queue, washroom-break-people)
   > Match circularly linked list and customer queue, if position of owner and bag same, pick it up.
   > Washroom break people come late and randomly get in middle of circularly linked list of people.
-- int `customs` (void)
+- int `customs` (international or not)
   > Gives amount to be paid in tarriffs
 - bool `checkExitLuggage` (void)
   > Enter luggage content info for imported stuff.
@@ -132,7 +132,3 @@
   > Removes gate from the list
 - bool `groundCrewAvailability` (current-available-ground-crew)
   > Admin tells how many crew available
-
-
-
-
